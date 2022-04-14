@@ -1,0 +1,61 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+nav{
+    height: 75px;
+    width: 100%;
+    position: fixed;
+    background-color: green;
+    text-align: center;
+}
+
+nav ul li{
+    display: inline-block;
+    width: 100px;
+    padding: 10px;
+    background-color: seagreen;
+    color: whitesmoke;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+nav ul li:hover{
+    border: 1px solid whitesmoke;
+    background-color: whitesmoke;
+    color: seagreen;
+}
+
+main{
+    width: 75%;
+    min-width: 500px;
+    margin: 0px auto;
+    padding-top: 75px;
+}
+
+.banner{
+    background-color: cadetblue;
+    text-align: center;
+    padding: 30px 0;
+    margin-bottom: 50px;
+}
+
+#big-bugs{
+    height: 250px;
+}
+
+.guestbook *{
+    margin-bottom: 25px;
+}
+
+.guestbook h2{
+    font-size: 1.5em;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+#news-feed ul{
+    margin-left: 20px;
+}
