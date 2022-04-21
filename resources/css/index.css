@@ -8,8 +8,10 @@ nav{
     height: 75px;
     width: 100%;
     position: fixed;
+    top: 0;
     background-color: green;
     text-align: center;
+    z-index: 1;
 }
 
 nav ul li{
@@ -32,7 +34,7 @@ main{
     width: 75%;
     min-width: 500px;
     margin: 0px auto;
-    padding-top: 75px;
+    margin-top: 75px;
 }
 
 .banner{
@@ -44,6 +46,7 @@ main{
 
 #big-bugs{
     height: 250px;
+    filter: drop-shadow( 1px 1px black);
 }
 
 .guestbook *{
