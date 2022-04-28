@@ -1,0 +1,43 @@
+nav {
+    height: 75px;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    background-color: green;
+    text-align: center;
+    z-index: 1;
+}
+
+nav ul li {
+    display: inline-block;
+    min-width: 100px;
+    max-width: 300px;
+    margin-top: 20px;
+    padding: 10px 0;
+    border: 1px solid seagreen;
+    background-color: seagreen;
+    color: whitesmoke;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+nav a {
+    color: whitesmoke;
+    text-decoration: none;
+    padding: 10px;
+}
+
+nav ul li:hover {
+    border: 1px solid whitesmoke;
+    background-color: whitesmoke;
+    color: seagreen;
+}
+
+nav a:hover {
+    color: seagreen;
+    text-decoration: none;
+}
+
+#navfocus a{
+    color: darkgoldenrod;
+}
