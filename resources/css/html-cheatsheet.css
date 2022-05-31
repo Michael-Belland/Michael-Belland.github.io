@@ -3,4 +3,37 @@ main {
     min-width: 500px;
     margin: 0px auto;
     margin-top: 75px;
+    text-align: center;
+}
+
+h2{
+    color: green;
+}
+
+p{
+    text-align: left;
+}
+
+table{
+    margin: 20px auto;
+    border: 1px solid black;
+}
+
+td, th {
+    min-width: 150px;
+    max-width: 500px;
+    border: 1px solid gray;
+    padding: 5px;
+}
+
+th{
+    background-color: seagreen;
+}
+
+td{
+    text-align: justify;
+}
+
+.monospace{
+    font-family: monospace;
 }

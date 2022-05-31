@@ -22,7 +22,93 @@
     </nav>
 
     <main>
-        This page is under development!  Come back later and see what's new!
+        <h1>HTML Semantic Element Reference</h1>
+        <h2>Document Structure Semantic Elements</h2>
+        <table>
+            <thead>
+                <th>Tag</th>
+                <th>Name</th>
+                <th>Description</th>
+            </thead>
+            <tr>
+                <td class="monospace">&lt;nav&gt;</td>
+                <td>Navigation</td>
+                <td>This tag is used to denote a group of navigation links on a site, like the green navigation bar on the top of this page.  Don't omit it -- for accessibility, screen readers can omit the content if it has this tag!</td>
+            </tr>
+            <tr>
+                <td class="monospace">&lt;article&gt;</td>
+                <td>Article</td>
+                <td>Used to group together elements that make sense together.  A common example I see is individual blog posts on something like Wordpress, where each blog post would be its own <span class="monospace">&lt;section&gt;</span>.</td>
+            </tr>
+            <tr>
+                <td class="monospace">&lt;aside&gt;</td>
+                <td>Aside</td>
+                <td>Asides are used to separate mildly-related content from other content that can stand on its own.  Newspapers often use asides so that interesting quotes appear easily for people skimming an article, but any unrelated content will do!</td>
+            </tr>
+            <tr>
+                <td class="monospace">&lt;section&gt;</td>
+                <td>Section</td>
+                <td>A generic element for grouping parts of a document together.  It's like a <span class="monospace">&lt;div&gt;</span> element, but it has semantic meaning in the page layout.  Try to use this only if the other semantic tags don't apply!  <br><b>Hint:</b> Sections usually have headings!  If the content you're looking at doesn't naturally have a heading, look at <span class="monospace">&lt;div&gt;</span> or <span class="monospace">&lt;nav&gt;</span> instead.</td>
+            </tr>
+            <tr>
+                <td class="monospace">&lt;div&gt;</td>
+                <td>Division</td>
+                <td>A completely functional but non-semantic way to group document elements.  Generally, a lot of sites use a lot of these -- especially those made before HTML5!  But now, try to use these only for non-semantic reasons, such as for the site's appearance.</td>
+            </tr>
+        </table>
+
+        <p>There are also <span class="monospace">&lt;header&gt;</span>, <span class="monospace">&lt;main&gt;</span>, and <span class="monospace">&lt;footer&gt;</span> tags, which are division elements for exactly what they're named.  I couldn't think of something insightful to say about them, so I omitted them from the table.</p><br>
+
+        <h2>Individual Component Semantic Elements</h2>
+        <table>
+            <thead>
+                <th>Tag</th>
+                <th>Name</th>
+                <th>Description</th>
+            </thead>
+            <tr>
+                <td class="monospace">&lt;figure&gt;</td>
+                <td>Figure</td>
+                <td>Elements that together comprise a single unit such as an image or quote.  It should be a standalone unit, so if it's a necessary part of the content, like an emoji in a quoted forum post, you might just use  <span class="monospace">&lt;img&gt;</span> instead.  Of course, a  <span class="monospace">&lt;figure&gt;</span> can contain a  <span class="monospace">&lt;img&gt;</span> tag.</td>
+            </tr>
+            <tr>
+                <td class="monospace">&lt;figcaption&gt;</td>
+                <td>Figure Caption</td>
+                <td>This tag goes inside the opening and closing tags for the <span class="monospace">&lt;figure&gt;</span> element,<br>representing a caption that describes the image in it.  Seen by everyone, not just screen readers.  See <a href="https://stackoverflow.com/questions/58447538/accessibility-difference-between-img-alt-and-figcaption">this StackOverflow post</a> for more about <span class="monospace">&lt;img alt&gt;</span> vs <span class="monospace">&lt;figcaption&gt;</span></td>
+            </tr>
+            <tr>
+                <td class="monospace">&lt;strong&gt;</td>
+                <td>Strong Importance</td>
+                <td>Used to separate important inline content (usually text) from other content.  For example, <strong>do not use this tag just for bold text</strong> - that's not semantic.</td>
+            </tr>
+            <tr>
+                <td class="monospace">&lt;b&gt;</td>
+                <td>Bring Attention</td>
+                <td>This used to be used to write bold text in <b>HTML</b>, but no more!  Use <b>CSS</b> for that.  It can be used for <b>keywords</b>, like it is here -- but important stuff uses <span class="monospace">&lt;strong&gt;</span> instead.</td>
+            </tr>
+            <tr>
+                <td class="monospace">&lt;em&gt;</td>
+                <td>Emphasis</td>
+                <td>It's <em>really</em> important to understand that this tag is used to <em>emphasize</em> content.  Don't use it just for italics!  If you read its content, it'd be something you stress <em>naturally</em>.</td>
+            </tr>
+            <tr>
+                <td class="monospace">&lt;cite&gt;</td>
+                <td>Citation</td>
+                <td>This tag is used to separate the name of a creative work from its surrounding text, especially when it is referenced as the source of other nearby content.  Renders in italics by default.</td>
+            </tr>
+            <tr>
+                <td class="monospace">&lt;i&gt;</td>
+                <td>Idiomatic Text</td>
+                <td>This is used for text that's set apart for readability reasons.  For example, the spaceship <i>Discovery</i> is currently at the Udvar-Hazy Air and Space Museum.<br>Try seeing if tags like <span class="monospace">&lt;strong&gt;</span>, <span class="monospace">&lt;b&gt;</span>, <span class="monospace">&lt;em&gt;</span>, or <span class="monospace">&lt;cite&gt;</span> work better before using this.</td>
+            </tr>
+            <tr>
+                <td class="monospace">&lt;pre&gt;</td>
+                <td>Preformatted Text</td>
+                <td>Do you see all the code-like monospace text on this page?  It could be written with the <span class="monospace">&lt;pre&gt;</span> tag, which displays the contained text exactly as it is.  (For practice with CSS, though, this page mostly uses a <span class="monospace">&lt;span&gt;</span> with a CSS class instead.)</td>
+            </tr>
+        </table>
+
+        <p>A lot of this information is adapted from <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element">the MDN web docs for HTML elements</a>, so check that out for more information!</p>
     </main>
     
 </body>
