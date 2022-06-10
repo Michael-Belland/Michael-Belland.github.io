@@ -13,7 +13,7 @@ section{
     padding: 10px;
 }
 
-h1, h2, .top-align{
+h1, h2, h3{
     font-family: 'Amatic SC', cursive;
     font-weight: 700;
 }
@@ -28,7 +28,6 @@ h2{
 
 h3{
     font-size: 32px;
-    font-weight: 400;
 }
 
 .color-container{
@@ -90,16 +89,16 @@ h3{
     font-style: italic;
 }
 
-#fonts{
+#fonts, #styles{
     text-align: justify;
 }
 
-#fonts > h2{
+#fonts > h2, #styles > h2{
     text-align: center;
     margin-bottom: 20px;
 }
 
-.font-container{
+.font-container, .style-container{
     width: 45%;
     min-width: 400px;
     display: inline-block;
@@ -107,7 +106,7 @@ h3{
     margin: 20px 0;
 }
 
-.font > h3{
+.font > h3, .style-container > h3{
     text-decoration: underline;
     margin-bottom: 10px;
 }
@@ -119,14 +118,17 @@ h3{
 .amatic-sc{
     font-family: 'Amatic SC', cursive;
     font-size: 24px;
+    font-weight: 700;
 }
 
 .hind-siliguri{
     font-family: 'Hind Siliguri', sans-serif;
+    font-weight: 400;
 }
 
 .source-code-pro{
     font-family: 'Source Code Pro', monospace;
+    font-weight: 400;
 }
 
 .bold{
@@ -136,3 +138,16 @@ h3{
 .italic{
     font-style: italic;
 }
+
+.size-sixty{
+    font-size: 60px;
+}
+
+.size-forty-eight{
+    font-size: 48px;
+}
+
+.size-thirty-two{
+    font-size: 32px;
+}
+
