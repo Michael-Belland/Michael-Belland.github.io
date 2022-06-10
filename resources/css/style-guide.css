@@ -4,12 +4,31 @@ main {
     margin: 0px auto;
     margin-top: 75px;
     text-align: center;
+    font-family: 'Hind Siliguri', sans-serif;
 }
 
 section{
     border: 1px solid black;
     margin: 20px 0;
     padding: 10px;
+}
+
+h1, h2, .top-align{
+    font-family: 'Amatic SC', cursive;
+    font-weight: 700;
+}
+
+h1{
+    font-size: 60px;
+}
+
+h2{
+    font-size: 48px;
+}
+
+h3{
+    font-size: 32px;
+    font-weight: 400;
 }
 
 .color-container{
@@ -59,8 +78,6 @@ section{
     top: 20px;
     width: 100%;
     text-align: center;
-    font-size: 24px;
-    text-transform: uppercase;
 }
 
 .bottom-align{
@@ -69,5 +86,53 @@ section{
     width: 100%;
     text-align: center;
     font-size: 18px;
-    font-family: monospace;
+    font-family: 'Source Code Pro', monospace;
+    font-style: italic;
+}
+
+#fonts{
+    text-align: justify;
+}
+
+#fonts > h2{
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.font-container{
+    width: 45%;
+    min-width: 400px;
+    display: inline-block;
+    vertical-align: top;
+    margin: 20px 0;
+}
+
+.font > h3{
+    text-decoration: underline;
+    margin-bottom: 10px;
+}
+
+.font > p{
+    margin-bottom: 5px;
+}
+
+.amatic-sc{
+    font-family: 'Amatic SC', cursive;
+    font-size: 24px;
+}
+
+.hind-siliguri{
+    font-family: 'Hind Siliguri', sans-serif;
+}
+
+.source-code-pro{
+    font-family: 'Source Code Pro', monospace;
+}
+
+.bold{
+    font-weight: 700;
+}
+
+.italic{
+    font-style: italic;
 }

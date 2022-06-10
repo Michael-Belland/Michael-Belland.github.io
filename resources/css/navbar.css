@@ -12,12 +12,15 @@ nav ul li {
     display: inline-block;
     min-width: 100px;
     max-width: 300px;
-    margin-top: 20px;
+    margin-top: 10px;
     border: 1px solid seagreen;
     background-color: seagreen;
     color: whitesmoke;
     text-align: center;
     text-transform: uppercase;
+    font-family: 'Amatic SC', serif;
+    font-weight: 700;
+    font-size: 24px;
 }
 
 nav a {
