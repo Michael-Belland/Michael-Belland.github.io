@@ -9,23 +9,25 @@ html{
     font-size: 22px;
     color: seashell;
     background-color: black;
-    opacity: 0.9;
     text-align: center;
 }
 
 header{
     height: 70px;
     min-width: 600px;
+    width: 100%;
     padding-left: 10px;
     padding-right: 10px;
     padding-top: 10px;
     padding-bottom: 9px;
     border-bottom: 1px solid seashell;
+    background-color: black;
     text-align: left;
-    display: fixed;
+    position: fixed;
     top: 0;
     display: flex;
     align-items: center;
+    z-index: 1;
 }
 
 header h1{
@@ -51,4 +53,31 @@ header li{
 
 a {
     color: seashell;
+}
+
+main{
+    margin-top: 70px;
+    opacity: 0.9;
+    width: 100%;
+    padding: auto 0;
+}
+
+.jumbotron{
+    background-image: url("../images/tea-cozy/img-mission-background.webp");
+    height: 700px;
+    width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.black-bar{
+    background-color: black;
+    width: 100%;
+    padding: 10px;
+}
+
+.black-bar h2{
+    padding-bottom: 20px;
 }
