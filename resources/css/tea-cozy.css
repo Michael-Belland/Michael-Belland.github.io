@@ -65,11 +65,13 @@ main{
 .jumbotron{
     background-image: url("../images/tea-cozy/img-mission-background.webp");
     height: 700px;
-    width: 1200px;
+    width: 100%;
+    max-width: 1200px;
     margin: 0 auto;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
+    background-position: center;
 }
 
 .black-bar{
@@ -78,6 +80,33 @@ main{
     padding: 10px;
 }
 
-.black-bar h2{
+h2{
     padding-bottom: 20px;
 }
+
+.tea-of-the-month{
+    width: 100%;
+    max-width: 1000px;
+    margin: 75px auto;
+}
+
+.tea-of-the-month h4{
+    padding-bottom: 10px;
+}
+
+#tea-cards{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.card{
+    margin: 15px 15px;
+    font-weight: bold;
+}
+
+.card img{
+    width: 300px;
+    height: 200px;
+}
+
