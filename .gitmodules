@@ -1,0 +1,3 @@
+[submodule "ruthless-sky-site"]
+	path = ruthless-sky-site
+	url = git@github.com:Michael-Belland/ruthless-sky-site.git
